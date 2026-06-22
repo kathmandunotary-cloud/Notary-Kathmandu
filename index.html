@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notary Kathmandu - Trusted Notary & Translation Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-font {
+            font-family: 'Playfair Display', serif;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(30, 64, 175, 0.3);
+        }
+        .service-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-left: 4px solid #1e40af;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+        .why-choose-item {
+            transition: background 0.3s;
+        }
+        .why-choose-item:hover {
+            background: #f0f9ff;
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s;
+        }
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #1e40af;
+            transition: width 0.3s;
+        }
+        .nav-link:hover:after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo/Business Name -->
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-blue-700 rounded-lg flex items-center justify-center">
+                    <span class="text-white font-bold text-lg">NK</span>
+                </div>
+                <span class="text-2xl font-bold text-blue-700">Notary Kathmandu</span>
+            </div>
+
+            <!-- Navigation Menu -->
+            <div class="hidden md:flex gap-8">
+                <a href="#home" class="nav-link text-gray-700 font-medium">Home</a>
+                <a href="#services" class="nav-link text-gray-700 font-medium">Services</a>
+                <a href="#about" class="nav-link text-gray-700 font-medium">About</a>
+                <a href="#contact" class="nav-link text-gray-700 font-medium">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-blue-700 text-2xl" onclick="toggleMenu()">☰</button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-gray-50 px-4 py-4 border-t">
+            <a href="#home" class="block py-2 text-gray-700 font-medium">Home</a>
+            <a href="#services" class="block py-2 text-gray-700 font-medium">Services</a>
+            <a href="#about" class="block py-2 text-gray-700 font-medium">About</a>
+            <a href="#contact" class="block py-2 text-gray-700 font-medium">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-gradient-to-br from-blue-700 via-blue-600 to-blue-800 text-white py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="hero-font text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                Trusted Notary & Translation Services in Kathmandu
+            </h1>
+            <p class="text-lg sm:text-xl text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed">
+                Fast, secure, and legally recognized document notarization and certified translations for local and international use.
+            </p>
+            <a href="#contact" class="btn-primary inline-block px-8 py-4 rounded-lg text-white font-semibold text-lg">
+                Contact Us Today
+            </a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="hero-font text-4xl font-bold text-gray-900 mb-4">About Us</h2>
+                <div class="w-16 h-1 bg-blue-700 mx-auto"></div>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                    At Notary Kathmandu, we understand the critical importance of properly notarized and certified documents. Whether you're a student applying for higher education abroad, a business professional managing international transactions, or a visa applicant requiring official documentation, we provide professional support tailored to your unique needs.
+                </p>
+                <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                    Our services are fully compliant with the <span class="font-semibold text-blue-700">Nepal Notary Public Council (NNPC)</span> regulations, ensuring that every document we authenticate is legally recognized both domestically and internationally.
+                </p>
+                <div class="grid md:grid-cols-3 gap-6 mt-8">
+                    <div class="text-center p-4">
+                        <div class="text-4xl font-bold text-blue-700 mb-2">1000+</div>
+                        <p class="text-gray-600">Documents Processed</p>
+                    </div>
+                    <div class="text-center p-4">
+                        <div class="text-4xl font-bold text-blue-700 mb-2">500+</div>
+                        <p class="text-gray-600">Happy Clients</p>
+                    </div>
+                    <div class="text-center p-4">
+                        <div class="text-4xl font-bold text-blue-700 mb-2">10+</div>
+                        <p class="text-gray-600">Years Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Services Section -->
+    <section id="services" class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="hero-font text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
+                <div class="w-16 h-1 bg-blue-700 mx-auto"></div>
+                <p class="text-gray-600 mt-4 text-lg">Comprehensive notary and translation solutions for all your needs</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Document Notarization -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                            <span class="text-2xl">📄</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Document Notarization</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        Professional notarization of all official documents including:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Citizenship certificates</li>
+                        <li>Passports and travel documents</li>
+                        <li>Academic transcripts and certificates</li>
+                        <li>Property deeds and legal documents</li>
+                    </ul>
+                </div>
+
+                <!-- Certified Translation -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                            <span class="text-2xl">🌐</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Certified Translation</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        Authorized translations by certified professionals:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Nepali to English translation</li>
+                        <li>English to Nepali translation</li>
+                        <li>Multilingual support available</li>
+                        <li>Embassy-recognized certified copies</li>
+                    </ul>
+                </div>
+
+                <!-- Affidavits & Sworn Statements -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                            <span class="text-2xl">⚖️</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Affidavits & Sworn Statements</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        Legally drafted and notarized statements for official use:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Professionally drafted affidavits</li>
+                        <li>Sworn and signed in our office</li>
+                        <li>Valid for embassy requirements</li>
+                        <li>Court and official use approved</li>
+                    </ul>
+                </div>
+
+                <!-- Power of Attorney -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                            <span class="text-2xl">✍️</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Power of Attorney</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        Complete Power of Attorney solutions:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Legal drafting services</li>
+                        <li>NNPC compliant documents</li>
+                        <li>Notarization and authentication</li>
+                        <li>Recognized for financial and legal matters</li>
+                    </ul>
+                </div>
+
+                <!-- Certified True Copies -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md md:col-span-2">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                            <span class="text-2xl">✅</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Certified True Copies</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        Quick and accurate verification of original documents with official certification for institutional, educational, and governmental submissions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-blue-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="hero-font text-4xl font-bold text-gray-900 mb-4">Why Choose Notary Kathmandu?</h2>
+                <div class="w-16 h-1 bg-blue-700 mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="why-choose-item bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="text-white font-bold">⚡</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Fast Processing</h3>
+                            <p class="text-gray-700">Same-day service available for most document types without compromising quality.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="why-choose-item bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="text-white font-bold">🌍</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Embassy Recognition</h3>
+                            <p class="text-gray-700">All documents are recognized by embassies and international institutions worldwide.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="why-choose-item bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="text-white font-bold">📅</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Sunday Service</h3>
+                            <p class="text-gray-700">We're open on Sundays for your convenience—get your documents notarized when you need us most.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="why-choose-item bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="text-white font-bold">🔒</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Secure & Legal</h3>
+                            <p class="text-gray-700">NNPC compliant with strict confidentiality and professional legal standards.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="hero-font text-4xl font-bold text-gray-900 mb-4">Get in Touch</h2>
+                <div class="w-16 h-1 bg-blue-700 mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Contact Information -->
+                <div class="bg-blue-700 text-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                <span>📍</span>
+                            </div>
+                            <div>
+                                <p class="font-semibold mb-1">Address</p>
+                                <p class="text-blue-100">[Your Street/Building], Anamnagar, Kathmandu, Nepal</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                <span>📞</span>
+                            </div>
+                            <div>
+                                <p class="font-semibold mb-1">Phone</p>
+                                <p class="text-blue-100">[Your Phone Number]</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                <span>✉️</span>
+                            </div>
+                            <div>
+                                <p class="font-semibold mb-1">Email</p>
+                                <p class="text-blue-100">[Your Email Address]</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                <span>🕐</span>
+                            </div>
+                            <div>
+                                <p class="font-semibold mb-1">Working Hours</p>
+                                <p class="text-blue-100">Sunday - Friday</p>
+                                <p class="text-blue-100">10:00 AM to 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Your Name</label>
+                            <input type="text" placeholder="Enter your full name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-700">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Email Address</label>
+                            <input type="email" placeholder="Enter your email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-700">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Service Required</label>
+                            <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-700">
+                                <option>Select a service</option>
+                                <option>Document Notarization</option>
+                                <option>Certified Translation</option>
+                                <option>Affidavits & Sworn Statements</option>
+                                <option>Power of Attorney</option>
+                                <option>Certified True Copies</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Message</label>
+                            <textarea placeholder="Tell us about your needs" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-700"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary w-full px-6 py-3 rounded-lg text-white font-semibold text-lg">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-lg mb-2">
+                <span class="font-semibold text-white">Notary Kathmandu</span> - Trusted Notary & Translation Services
+            </p>
+            <p class="mb-4">
+                Location: [Your Street/Building], Anamnagar, Kathmandu, Nepal | Phone: [Your Phone Number] | Email: [Your Email Address]
+            </p>
+            <p class="text-sm text-gray-400 border-t border-gray-700 pt-4">
+                Copyright © 2024 Notary Kathmandu. All rights reserved. NNPC Compliant Services.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                    document.getElementById('mobileMenu').classList.add('hidden');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
